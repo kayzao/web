@@ -1,0 +1,37 @@
+title {
+    text-align: center;
+}
+body {
+    background-color: rgb(144, 216, 238);
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 1.5em;
+    border: 49px solid slategray;
+    margin-left: 0px; 
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+ul {
+    font-size: 1.25em;
+    text-indent: 0px;
+    text-align: left;
+    margin-left: 10%;
+}
+p {
+    text-indent: 80px;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+h2 {
+    text-align: center;
+}
+h1{
+    font-family: 'Roboto Mono';
+    font-size: 3em;
+}
+h3{
+    text-align: left;
+    text-align: 16%;
+}
