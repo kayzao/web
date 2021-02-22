@@ -6,32 +6,57 @@ body {
     font-family: 'Merriweather', serif;
     text-align: center;
     font-size: 1.5em;
-    border: 49px solid slategray;
+    border: solid slategray;
+    border-width: 150px 50px 50px 50px;
     margin-left: 0px; 
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    min-height: 30.7em ;
 }
-ul {
-    font-size: 1.25em;
-    text-indent: 0px;
-    text-align: left;
-    margin-left: 10%;
+
+button.menu {
+    background-color: lightgoldenrodyellow;
+    border-color: gold;
+    border-width: 5px;
+    border-style: solid;
+    color: black;
+    font-size: 1.15em; 
+    float: left;
+    top: 50px;
+    width: 14.285%;
 }
+img.github{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    height: 120px;
+    width: 120px;
+}
+
+button.menu:hover {
+    background-color: rgb(255, 214, 109);
+    color: white;
+}
+
+a.menu{
+    color: #8f5600;
+}
+
 p {
     text-indent: 80px;
     text-align: left;
     margin-left: 50px;
     margin-right: 50px;
 }
-h2 {
-    text-align: center;
-}
 h1{
     font-family: 'Roboto Mono';
     font-size: 3em;
 }
 h3{
+    text-align: center;
+}
+ul{
     text-align: left;
-    margin-left: 16%;
+    margin-left: 25%;
 }
