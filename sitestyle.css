@@ -1,6 +1,7 @@
 title {
     text-align: center;
 }
+
 body {
     background-color: rgb(144, 216, 238);
     font-family: 'Merriweather', serif;
@@ -14,7 +15,10 @@ body {
     margin-bottom: 0px;
     min-height: 737px;
 }
-
+h1.title{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.5em;
+}
 button.menu {
     background-color: lightgoldenrodyellow;
     border-color: gold;
@@ -61,10 +65,7 @@ p {
     margin-left: 50px;
     margin-right: 50px;
 }
-h1{
-    font-family: 'Roboto Mono';
-    font-size: 3em;
-}
+
 h3{
     text-align: center;
 }
