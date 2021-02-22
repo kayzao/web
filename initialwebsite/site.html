@@ -2,147 +2,39 @@
 <html>
 
 <head>
-    <title>IntroCS subject.html</title>
+    <title>The Fundamentals of a Computer</title>
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
+    <a href="https://github.com/kzhao31/web" target="_blank"><img
+            src="https://cdn3.iconfinder.com/data/icons/social-icons-hex-grey/512/GITHUB-512.png" alt="Github logo"
+            class="github"></a>
+    <div id="menu">
+        <a href="./site.html" class=menu><button class="menu">About Site</button></a>
+        <a href="./motherboard.html" class=menu><button class="menu">Motherboard</button></a>
+        <a href="./power.html" class=menu><button class="menu">Power</button></a>
+        <a href="./processor.html" class=menu><button class="menu">Processor</button></a>
+        <a href="./memorystorage.html" class=menu><button class="menu">Memory & Storage</button></a>
+        <a href="./graphics.html" class=menu><button class="menu">Graphics</button></a>
+        <a href="./case.html" class=menu><button class="menu">Case</button></a>
+    </div>
     <h1>The Fundamentals of a Computer</h1>
-    <br>
-    <h3>Table of Contents</h3>
-    <ul id="contents">
-        <li><a href="#motherboard">Motherboard</a></li>
-        <li><a href="#power">Power Supply</a></li>
-        <li><a href="#processor">Processor</a></li>
-        <li><a href="#memorystorage">Memory + Storage</a></li>
-        <li><a href="#graphics">Graphics Processor</a></li>
-        <li><a href="#case">Computer Case</a></li>
+    <p>This website discusses the fundamental components of a computer, specifically, a personal computer, or PC. Of a
+        computer, there are several major parts. These are the: </p>
+    <ul>
+        <li>Motherboard</li>
+        <li>Power Supply</li>
+        <li>Processor</li>
+        <li>Memory</li>
+        <li>Storage</li>
+        <li>Graphics source</li>
+        <li>Case</li>
     </ul>
-    <br>
-    <div id="motherboard">
-        <h2>Motherboard</h2>
-        <p> The motherboard is a piece of plastic that houses other major parts of the computer, such as the processor,
-            memory, storage, etc.</p>
-        <br>
-        <!-- https://www.msi.com/Motherboard/MPG-B550-GAMING-CARBON-WIFI -->
-        <img src="https://www.amd.com/system/files/2020-05/513262-MS--MPG-B550-GAMING-CARBON-WIFI-motherboard-709x709.png"
-            alt="MSI B550 Motherboard" width="500" height="525">
-        <p>Above is an image of an MSI B550 motherboard. The square in the upper middle would contain
-            the <a href="#processor">processor</a>. Different processors can fit different types of processors. Some
-            boards, such as this one, are designed for AMD processors, while others are designed with Intel processors
-            in mind. The vertical slits to its right contain the <a href="#memorystorage">memory sticks</a>. The
-            two horizantal rectangular grey pieces below the processor are heatsinks for <a
-                href="#memorystorage">M.2storage SSDs</a>.
-            The long horizantal slits below the processor are PCIe slots for the <a href="#graphics">graphics
-                cards</a>. The large covered area at the top right of the board contains the ports of the
-            motherboard, in order to allow it to power other devices connected to the computer via USB ports and similar
-            ports.</p>
-        <p>For a more detailed description of a motherboard, click <a
-                href="https://www.tomshardware.com/reviews/motherboard-parts-explained,5669.html" target="_blank">here</a> for a guide
-            on the parts of a motherboard by tomshardware.com </p>
-    </div>
-    <div id="power">
-        <h2>Power Supply</h2>
-        <p>The power supply is a crucial part of any computer, since it provides the only way for a computer to recieve
-            electricity. Power supplies are rates based on how many watts they can provide, and how efficient they are.
-            For
-            example, given a power supply named CX500M 80+ Bronze, its efficiency is at minimum above 80%, so if it is
-            providing 500 watts, it is drawing a maximum of 625 watts from the wall. Bronze is an additional
-            categorization, with Bronze being the least efficient 80+ PSU, followed by silver, gold, platinum and
-            finally, titanium. The more efficient, the less electricity is being wasted.</p>
-        <p>For more information, see <a
-                href=https://www.corsair.com/ww/it/blog/how-to-build-a-pc---the-power-supply target="_blank">this blog post by
-                Corsair</a></p>
-    </div>
-
-    <div id="processor">
-        <h2>Processor</h2>
-        <img src="https://www.techspot.com/articles-info/2000/images/2020-04-06-image-9.jpg" alt="CPU image" width="500"
-            height="300">
-        <p>Currently, the largest two chip manufacturers for desktop CPUs (Central Processing Unit) are AMD and Intel.
-            Both companies produce industry-leading CPUs that can clock up to 5 Ghz. The higher its clockspeed, the
-            faster it is. However, clockspeed is not the only consideration for a CPU.
-            Overclocking is when you boost your CPU's base speed, given that you have avaiable <a href="power">power
-                supply</a> wattage as well as manageable CPU temperatures. Cores and threads are important because
-            they determine how much work you can do with your CPU.</p>
-        <h4>AMD CPUs</h4>
-        <p>AMD's current generation of CPUs are the ryzen 5000 lineup, primarily based on the Zen3 architecture. They
-            fit into the B550 and X570 <a href="#motherboard"> motherboards</a>
-            You can find which motherboard your CPU is compatable with through: </p>
-        <img src="https://www.extremetech.com/wp-content/uploads/2019/05/AMD-X570-Support.jpg" alt="Mobo Compatability"
-            width="500" height="300">
-        <h4>Intel CPUs</h4>
-        <p>Intel's current lineup of CPUs are the 10th generation Core i lineup, containing the i3, i5, i7, and i9, all
-            using Intel's new Tiger Lake architecture.
-        <p>For more information on Intel processors, click <a
-                href="https://www.businessinsider.com/what-the-numbers-and-letters-mean-in-intel-cpu-processor-chips-2018-8#youre-most-likely-to-see-intels-core-line-of-processors-like-intel-core-i3-8130u-there-are-other-lines-of-intel-processors-like-pentium-but-were-going-to-stick-to-the-most-common-core-line-1" target="_blank">here</a>.
-        </p>
-        <p>CPUs also requiere a CPU cooler, so they don't end up killing themselves from the heat they produce, which
-            can reach 100 degrees celsius. There are 2 main types of cpu coolers: air cooling and AIOs.
-            A CPU air cooler is basically a fan and some fins to help dissapate heat, all put on top of a processor. Air
-            coolers are the most basic, as well as the cheapest.
-            An AIO (All in One) is a radiator and a cooler put on top of a processor, connected by flexible piping to
-            contain water. AIOs are more expensive, but normally cool better than air coolers.</p>
-    </div>
-    <div id="memorystorage">
-        <h2>Memory</h2>
-        <p>RAM, or Random access Memory, is what the CPU uses to save data quickly. Desktop RAM can be categorized by
-            the letters DDR, followed by a number, with that number representing the generation of that memory. The
-            current, and most widely used, generation of RAM is DDR4. It supports speeds of up to 3600mhz.
-            Different <a href="#processor">CPUs</a> support different amounts of RAM. Usually, you would want at least
-            4gb of RAM if you want to run Windows. If you want to play games, then it is recommended to have 8-16gb of
-            RAM. For memory intensive workloads should have at least 32gb of RAM</p>
-        <img src="https://bleuwire.com/wp-content/uploads/2019/08/RAM-module-motherboard.jpg" alt="MoboMemorySlots"
-            width="500" height="300">
-        <p>On your motherboard, you should have at least 2 slots of RAM for peak performance.
-            For more information on memory, click <a
-                href="https://www.tomshardware.com/reviews/memory-buying-guide,6347.html" target="_blank">here</a> for a guide on the
-            specifics of memory</p>
-        <p>There is a difference between memory and storage. Memory is volatile, meaning that it resets if power is
-            lost. Storage, on the other hand, is permanent, as long as the item holding the data is not physically
-            destroyed. There are two primary types of storage: Hard drives and SSDs.</p>
-        <p>SSD stands for Solid State Drives, and they are the faster, but more expensive, storage option of the two.
-            There are several types of SSDs, but all are faster, and more reliable than hard drives. They function by
-            electronically saving data.</p>
-        <p>Hard drives are much cheaper than SSDs, but are less reliable, and take up more space. This is because unlike
-            SSDs, hard drives save data on discs, and physically locate data.</p>
-    </div>
-    <div id="graphics">
-        <h2>Graphics</h2>
-        <p>There are two types of graphics cards: dedicated and integrated graphics. Integrated graphics are the
-            graphics integrated with some processors, and are almost always slower than dedicated graphics.
-            Dedicated graphics are separate from the processor, as they requiere their own housing, cooling, etc.
-            AMD has a graphics lineup called Radeon RX. Their newest GPUS include the RX 6900 XT, 6800 XT, and 6800.
-            These gpus support ray tracing.</p>
-        <img src="https://cdn.wccftech.com/wp-content/uploads/2020/10/2020-10-28_21-26-38.png" alt="AMD GPU" width="500"
-            height="300">
-        <p>Nvidia has a graphics lineup called RTX, which means "ray-tracing", a technique used in games and in renders
-            to make light sources seem more realistic. Their newest GPUs include the rtx 3090, rtx 3080, rtx 3070, rtx
-            3060 ti, and rtx 3060.</p>
-        <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-ampere-rtx-3090-og-1200x630.jpg"
-            alt="NVIDIA GPU" width="500" height="300">
-        <p>Nvidia GPUs have much better drivers than AMD. Nvidia has new software that allows for gaming resolution
-            upscaling, and their gpus themselves are better thought out for ray tracing.</p>
-        <p>For more information, click <a href="https://www.binarytides.com/graphics-card-specs-explained/" target="_blank">here</a> for
-            a explanation of the different specifications of graphics cards.</p>
-    </div>
-    <div id="case">
-        <h2>Computer Case</h2>
-        <img src="https://www.adorama.com/images/300x300/lipco11dw.jpg" alt="Computer Case">
-        <p>To prevent your PC from becoming a fire hazard and to protect the sensitive components inside, it is
-            recommended that you get a trustworthy and suitable case. Most cases are made of some type of metal
-            like aluminum, and can come with a tempered class sidepanel.
-            Just like <a href="#motherboard">motherboards</a>, cases have different size standards. These include E-ATX,
-            ATX, micro ATX, and mini ITX. Smaller cases are usually harder to build in and have much less air
-            ventiliation, however they are much smaller and can be fit in much smaller areas. Larger cases like E-ATX
-            are large and heavy, but support better ventiliation.</p>
-        <p>To regulate temperatures inside the case, you need fans. Fans are the cheapest way to cool the parts of your
-            system.
-            For more information, click <a
-                href="https://www.pcworld.com/article/3226748/how-to-buy-pc-case.html" target="_blank">here</a> for a guide on PC cases.
-        </p>
-    </div>
-    <p><a href="https://github.com/kzhao31/web" target="_blank">Github page</a></p>
+    <p>This website contains links to several other pages, each discussing one of the above components. Those links are
+        located near the top of the page. In addition, clicking on the github logo in the top right corner of the screen
+        will open the github source files for this website.</p>
+    <p>This website was made for Annual Intro to Computer CS, by Kelvin Zhao, period 4.</p>
 </body>
 
 </html>
