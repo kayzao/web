@@ -1,7 +1,6 @@
 title {
     text-align: center;
 }
-
 body {
     background-color: rgb(144, 216, 238);
     font-family: 'Merriweather', serif;
@@ -14,6 +13,12 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     min-height: 737px;
+}
+p {
+    text-indent: 80px;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 h1.title{
     font-family: 'Source Sans Pro', sans-serif;
@@ -59,13 +64,12 @@ img.github{
     height: 120px;
     width: 120px;
 }
-p {
-    text-indent: 80px;
-    text-align: left;
-    margin-left: 50px;
-    margin-right: 50px;
+img.floatleft{
+    float: left;
 }
-
+img.floatright{
+    float: right;
+}
 h3{
     text-align: center;
 }
