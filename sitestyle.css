@@ -2,11 +2,15 @@ title {
     text-align: center;
 }
 body {
+    /*
     background-color: rgb(144, 216, 238);
-    font-family: 'Merriweather', serif;
+    */
+    background-color: #00bfe6;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     font-size: 1.5em;
-    border: solid slategray;
+    border: solid skyblue;
+    color: white;
     border-width: 150px 50px 50px 50px;
     margin-left: 0px; 
     margin-right: 0px;
@@ -21,41 +25,9 @@ p {
     margin-right: 50px;
 }
 h1.title{
+    color: paleturquoise;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2.5em;
-}
-button.menu {
-    background-color: lightgoldenrodyellow;
-    border-color: gold;
-    border-width: 5px;
-    border-style: solid;
-    color: black;
-    font-size: 1.15em; 
-    float: left;
-    top: 50px;
-    width: 14.285%;
-}
-button.menu:hover {
-    background-color: rgb(255, 214, 109);
-    color: white;
-}
-a.menu{
-    color: #8f5600;
-}
-button.selected {
-    background-color: lightgoldenrodyellow;
-    font-size: 1.15em; 
-    float: left;
-    top: 50px;
-    width: 14.285%;
-    color: black;
-    border-color: saddlebrown;
-    border-width: 5px;
-    border-style: solid;
-}
-button.selected:hover {
-    background-color: rgb(255, 214, 109);
-    color: white;
 }
 img.github{
     position: absolute;
@@ -70,10 +42,70 @@ img.floatleft{
 img.floatright{
     float: right;
 }
-h3{
-    text-align: center;
-}
 ul{
-    text-align: left;
     margin-left: 25%;
+    text-align: left;
+    list-style-position: outside;
+    list-style-type: circle;
+}
+img.border{
+    border: 5px solid skyblue;
+    border-radius: 4px;
+}
+a {
+    text-decoration: underline;
+    color: #ffea00;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(233, 198, 0);
+}
+div.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lemonchiffon;
+}
+
+div.menu li {
+    float: left;
+    margin-left: 23.1px;
+    margin-right: 23.1px;
+}
+div.menu li.selected {
+    float: left;
+    margin-left: 23.1px;
+    margin-right: 23.1px;
+    background-color: #00bfe6;
+}
+
+div.menu li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+}
+div.menu li a:hover {
+    color: white;
+    background-color: rgb(255, 233, 107);
+}
+
+div.menu li.selected a.selected{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+}
+div.menu li.selected a.selected:hover {
+    color: white;
+    background-color: rgb(52, 198, 255);
 }
