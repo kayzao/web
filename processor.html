@@ -10,14 +10,16 @@
     <a href="https://github.com/kzhao31/web" target="_blank"><img
             src="https://cdn3.iconfinder.com/data/icons/social-icons-hex-grey/512/GITHUB-512.png" alt="Github logo"
             class="github"></a>
-    <div id="menu">
-        <a href="./site.html" class=menu><button class="menu">About Site</button></a>
-        <a href="./motherboard.html" class=menu><button class="menu">Motherboard</button></a>
-        <a href="./power.html" class=menu><button class="menu">Power</button></a>
-        <a href="./processor.html" class=menu><button class="selected">Processor</button></a>
-        <a href="./memorystorage.html" class=menu><button class="menu">Memory & Storage</button></a>
-        <a href="./graphics.html" class=menu><button class="menu">Graphics</button></a>
-        <a href="./case.html" class=menu><button class="menu">Case</button></a>
+    <div class=menu>
+        <ul>
+            <li><a href="./site.html">About Site</a></li>
+            <li><a href="./motherboard.html">Motherboard</a></li>
+            <li><a href="./power.html">Power Supply</a></li>
+            <li class="selected"><a href="./processor.html" class="selected">Processor</a></li>
+            <li><a href="./memorystorage.html">Memory & Storage</a></li>
+            <li><a href="./graphics.html">Graphics</a></li>
+            <li><a href="./case.html">Case</a></li>
+        </ul>
     </div>
     <br>
     <div id="processor">
@@ -26,19 +28,24 @@
             <p>Processors serve as the brain of the computer, executing instructions given to it. Processors are also
                 known as CPUs, which stands for Central Processing Unit. Currently, the two largest chip manufacturers
                 for desktop processors are AMD and Intel. Both companies produce industry-leading CPUs that can clock up
-                to 5 Ghz. The higher its clockspeed, the faster it is. However, clockspeed is not the only consideration 
-                for a CPU. Overclocking is when you boost your CPU's base speed, given that you have avaiable 
+                to 5 Ghz. The higher its clockspeed, the faster it is. However, clockspeed is not the only consideration
+                for a CPU. Overclocking is when you boost your CPU's base speed, given that you have avaiable
                 <a href="./power.html"> power supply</a> wattage as well as manageable CPU temperatures. Cores and
-                threads are important because they determine how much work you can do with your CPU.</p>
-            <h3>AMD CPUs</h3>
+                threads are important because they determine how much work you can do with your CPU.
+            </p>
+            <h2>AMD CPUs</h2>
             <p>AMD's current generation of CPUs are the ryzen 5000 lineup, primarily based on the Zen3 architecture.
-                They fit into the B550 and X570 <a href="./motherboard.html"> motherboards</a>
-                You can find which motherboard your CPU is compatable with through: </p>
+                They fit into the B550 and X570 <a href="./motherboard.html"> motherboards</a>. Traditionally, AMD
+                processors contain more threads, more cores, and cost less than their Intel counterparts, meaning that they
+                are better for running multiple processes at once.
+                You can find which motherboard each AMD CPU is compatable with through this chart: </p>
             <img src="https://www.extremetech.com/wp-content/uploads/2019/05/AMD-X570-Support.jpg"
-                alt="Mobo Compatability" width="500" height="300">
-            <h3>Intel CPUs</h3>
+                alt="Mobo Compatability" class="border" width="500" height="300">
+            <h2>Intel CPUs</h2>
             <p>Intel's current lineup of CPUs is the 10th generation Core lineup, containing the i3, i5, i7, and i9,
-                all using Intel's new Tiger Lake architecture.
+                all using Intel's new Tiger Lake architecture. Traditionally, Intel processors contain faster cores, meaning
+                they are better for single-core processes, such as playing most games. Intel processors also contain built-in 
+                <a href="./graphics.html">graphics</a>, for if you don't have a dedicated graphics card.
             <p>For more information on Intel processors, click <a
                     href="https://www.businessinsider.com/what-the-numbers-and-letters-mean-in-intel-cpu-processor-chips-2018-8#youre-most-likely-to-see-intels-core-line-of-processors-like-intel-core-i3-8130u-there-are-other-lines-of-intel-processors-like-pentium-but-were-going-to-stick-to-the-most-common-core-line-1"
                     target="_blank">here</a>.
@@ -48,7 +55,8 @@
                 A CPU air cooler is basically a fan and some fins to help dissapate heat, all put on top of a processor.
                 Air coolers are the most basic, as well as the cheapest.
                 An AIO (All in One) is a radiator and a cooler put on top of a processor, connected by flexible piping
-                to contain water. AIOs are more expensive, but normally cool better than air coolers.</p>
+                to contain water. AIOs are more expensive, but normally cool better than air coolers.
+            </p>
     </div>
 </body>
 
