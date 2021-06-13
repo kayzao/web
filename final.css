@@ -1,8 +1,3 @@
-/*
-colors are 00a6fb, 0582ca, 006494, 003554, 051923(darkest)
-
-position: absolute, etc
-*/
 body{
     background-color: #051923;
     color: #0582ca;
@@ -20,11 +15,11 @@ ul{
 }
 
 li a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 0.8em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.2em;
     background-color: slategray;
     min-width: 7%;
     float: right;
@@ -38,11 +33,11 @@ li a:hover {
     background-color: #0087ca;
 }
 li.selected a{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 0.8em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.2em;
     background-color: #051923;
     min-width: 7%;
     float: right;
@@ -63,7 +58,7 @@ h1{
 }
 h2{
     margin: 60px 200px;
-    color: #006494;
+    color: #1f7299;
     font-size: 2em;
 }
 p{
@@ -78,4 +73,17 @@ a {
 }
 a:hover {
     color: rgb(202, 172, 0);
+}
+iframe.demonstration {
+    margin-left: 200px;
+    border:2px solid yellow;
+}
+div.images{
+    font-size: 1.25em;
+}
+img{
+    float: left;
+    border:2px solid yellow;
+    margin: 30px 200px;
+    margin-right: 40px;
 }
