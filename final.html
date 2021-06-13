@@ -23,11 +23,17 @@
         which words were incorrect, and which characters were incorrect. With this information, it is able to tell the
         user their WPM (words per minute), number of characters typed, accuracy of characters typed, accuracy of each character, 
         and which words were typed incorrectly.</p>
+    <h2>How do you use the project?</h2>
+    <p>Download the python file, and run it. Make sure that you already have the module matplotlib downloaded. When prompted 
+        to, type in what the program requests.</p>
+    <h2>What are the files used in the program?</h2>
+    <p>They are AnnualCS_project.py, and source1_clean.txt. AnnualCS_project.py is the python code that does everything, and 
+        source1_clean.txt is the source for the random words.</p>
     <h2>How does the program print randomly generated words?</h2>
     <p>The text file with the book has already been edited to not have the table of contents and the header and footer.
         First, the text file is split into words, and added into a list. Then, a random number is generated from 0 to
         the length of the list minus one. The random number picks a word in the list, and if the word doesn't contain
-        numbers, the word is added to a seperate string. Once the requested number of words is generated, the program runs 
+        numbers, the word is added to a separate string. Once the requested number of words is generated, the program runs 
         through the list, removing all characters if they are not letters or dashes. Finally, the words are printed.</p>
     <h2>How does it calculate WPM and other related characteristics?</h2>
     <p>The time taken for the user to type the words is calculated by saving the time when the user is prompted to start
@@ -35,7 +41,7 @@
     <p>WPM is calculated by dividing the number of characters inputed by the number of seconds it took to do so, before
         dividing the result by 4.7, since 4.7 characters is a rough estimate for the average word length in English.</p>
     <p>To find out which words were typed incorrectly, both the user's input and the printed words are split into
-        seperate lists containing their words. The program then compares each word to its corresponding word in the
+        separate lists containing their words. The program then compares each word to its corresponding word in the
         user's input, and if they do not match, then it is marked as a "wrong word".</p>
     <p>To find out whcih characters were mistakes and which ones were correct, <strong><i>Typewriter</i></strong> looks at each character of each 
         word from the answer and from the output. It goes through all the letters of a word in the answer, or in the 
@@ -45,6 +51,15 @@
         answer is too short, then it marks each letter of the output word that hasn't been compared yet as a mistake.</p>
     <p>To find the accuracy of each letter typed, <strong><i>Typewriter</i></strong> simply prints out the number of times a character was typed correctly
         divided by the total number of times that character was typed, and converts it to a percentage.</p>
+    <h2>Are there any notable bugs with the program?</h2>
+    <p>Rarely, two words will be separated by not one space, but two spaces. This occurs since all words are generated 
+        prior to the removal of all symbols that aren't characters from the english alphabet or a dash, meaning words 
+        that are only made up of such symbols are wiped, leaving behind some odd spacing. In addition, sometimes text will 
+        appear that will make it seem as though the program failed to separate two words by a space. In reality, those words were 
+        separated by a single period, comma, or other symbol. That symbol was then removed, leaving no separating symbol or space
+        between the words. There is no solution to this other than changing the text file itself. If you encounter an instance of 
+        two words combined without a space separating them, type the words as they are, combined together.
+    </p>
     <br>
     <p>Created by Kelvin Zhao, AnnualCS period 4</p>
 </body>
