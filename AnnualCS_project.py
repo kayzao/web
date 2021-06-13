@@ -157,7 +157,7 @@ elif answer != string and len(answer) != 0:
             string_errors += "'" + word + "' " + str(wrongwords[word])
             if wrongwords[word] == 1: string_errors += " time."
             else: string_errors += " times."
-        elif x + 1 == len(mistakes): #if there are multiple words, and this is last one
+        elif x + 1 == len(wrongwords): #if there are multiple words, and this is last one
             string_errors += "and " + "'" + word + "' " + str(wrongwords[word])
             if wrongwords[word] == 1: string_errors += " time."
             else: string_errors += " times."
@@ -165,6 +165,7 @@ elif answer != string and len(answer) != 0:
             string_errors += "'" + word + "' " + str(wrongwords[word])
             if wrongwords[word] == 1: string_errors += " time, "
             else: string_errors += " times, "
+        x += 1
     type(string_errors, 0.03)
 accuracy = round((correctcount / totalchar) * 100, 2)
 if not accuracy == 100.00:
@@ -196,6 +197,7 @@ plt.xlabel("Characters")
 plt.ylabel("Percentage (%)")
 plt.ylim([0, 100])
 plt.bar(chars, percentages)
+plt.grid()
 if answer.lower() == "y":
     plt.show()
 type("(End of this program)", 0.1)
