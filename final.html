@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AnnualCS Final: typewriter.py</title>
+    <link href="final.css" rel="stylesheet">
+</head>
+
+<body>
+    <div style="background-color:slategray; width:100%; height:44px;">
+        <ul>
+            <li><a href="" target="_blank">Github Page</a></li>
+            <li><a href="duckduckgo.com" target="_blank">Revised Prototype</a></li>
+            <li><a href="./screenshots.html">Screenshots</a></li>
+            <li class=selected><a href="yahoo.com">About</a></li>
+        </ul>
+    </div>
+    <h1>typewriter.py</h1>
+    <h2>What is the program?</h2>
+    <p>The program takes in a text file containing a book from <a href=https://www.gutenberg.org target="_blank">Project 
+        Gutenburg</a>, as well as some user input, to print out randomly generated words for the user to type, with 
+        most punctuation removed. The program then calculates the time taken for the user to finish typing,
+        which words were incorrect, and which characters were incorrect. With this information, it is able to tell the
+        user their WPM (words per minute), number of characters typed, accuracy of characters typed, accuracy of each character, 
+        and which words were typed incorrectly.</p>
+    <h2>How does the program print randomly generated words?</h2>
+    <p>The text file with the book has already been edited to not have the table of contents and the header and footer.
+        First, the text file is split into words, and added into a list. Then, a random number is generated from 0 to
+        the length of the list minus one. The random number picks a word in the list, and if the word doesn't contain
+        numbers, the word is added to a seperate string. Once the requested number of words is generated, the program runs 
+        through the list, removing all characters if they are not letters or dashes. Finally, the words are printed.</p>
+    <h2>How does it calculate WPM and other related characteristics?</h2>
+    <p>The time taken for the user to type the words is calculated by saving the time when the user is prompted to start
+        typing, and subtracts that from the time at when the user presses enter.</p>
+    <p>WPM is calculated by dividing the number of characters inputed by the number of seconds it took to do so, before
+        dividing the result by 4.7, since 4.7 characters is a rough estimate for the average word length in English.</p>
+    <p>To find out which words were typed incorrectly, both the user's input and the printed words are split into
+        seperate lists containing their words. The program then compares each word to its corresponding word in the
+        user's input, and if they do not match, then it is marked as a "wrong word".</p>
+    <p>To find out whcih characters were mistakes and which ones were correct, the program looks at each character of each 
+        word from the answer and from the output words. It first goes through all letters of a word in the answer, or in the 
+        output words, depending on which one is shorter. If one of those letters is incorrect, the program marks it as such. 
+        If not, the program marks it as correct. Next, if the word from the answer is too long, the program counts the number 
+        of extra letters, and marks the last letter of the word from the output wrong that many times. If the word from the 
+        answer is too short, then it marks each letter of the output word that hasn't been compared yet as a mistake.</p>
+    <p>To find the accuracy of each letter typed, the program simply prints out the number of times a character was typed correctly
+        divided by the total number of times that character was typed, and converts it to a percentage.</p>
+    <br>
+</body>
+
+</html>
